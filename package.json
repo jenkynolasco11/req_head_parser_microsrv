@@ -1,0 +1,23 @@
+{
+  "name": "request_header_parser",
+  "version": "1.0.0",
+  "description": "Request Header Parser",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenkynolasco11/req_head_parser_microsrv.git"
+  },
+  "author": "Jenky Nolasco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenkynolasco11/req_head_parser_microsrv/issues"
+  },
+  "homepage": "https://github.com/jenkynolasco11/req_head_parser_microsrv#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
