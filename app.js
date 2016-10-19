@@ -7,7 +7,8 @@ var http = require('http');
 var server = http.createServer(function(req,res){
   var header = req.headers;
     var os = header['user-agent'].match(/\(([\w\s.;_|]+)\)/)[1];
-    var ip = header['host'];
+    var ip = header['x-forwarded-for'] || req.connection.remoteAddress ||
+              req.socket.remoteAddress || req.connection.socket.remoteAddress;
     var lang = header['accept-language'].split(',')[0];
     res.end(JSON.stringify({
       ipaddress : ip,
